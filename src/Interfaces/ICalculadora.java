@@ -14,7 +14,7 @@ public interface ICalculadora {
 	 * @param arg2 Segundo argumento
 	 * @return
 	 */
-	public int sumar(int arg1, int arg2);
+	public int sumar();
 	
 	/**
 	 * Retorna la sustracción de los enteros recibidos por parámetro.
@@ -22,7 +22,7 @@ public interface ICalculadora {
 	 * @param arg2 Segundo argumento
 	 * @return
 	 */
-	public int restar(int arg1, int arg2);
+	public int restar();
 	
 	/**
 	 * Retorna el valor multiplicado de los dos enteros recibidos por parámetro.
@@ -30,7 +30,7 @@ public interface ICalculadora {
 	 * @param arg2 Segundo argumento
 	 * @return
 	 */
-	public int multiplicar(int arg1, int arg2);
+	public int multiplicar();
 
 	/**
 	 * Retorna el resto de los valores recibidos por parámetro.
@@ -38,5 +38,5 @@ public interface ICalculadora {
 	 * @param arg2 Divisor
 	 * @return
 	 */
-	public int division(int arg1, int arg2);
+	public int dividir();
 }

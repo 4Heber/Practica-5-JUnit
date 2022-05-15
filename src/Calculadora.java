@@ -6,6 +6,19 @@ import Interfaces.ICalculadora;
  *
  */
 public class Calculadora implements ICalculadora{
+	
+	private int input1;
+	private int input2;
+	
+	/**
+	 * Constructor clase Calculadora, instancia objeto con dos enteros.
+	 * @param input1
+	 * @param input2
+	 */
+	public Calculadora(int input1, int input2) {
+		this.input1 = input1;
+		this.input2 = input2;
+	};
 
 	/**
 	 * Retorna el valor sumado de los dos enteros recibidos por parámetro.
@@ -14,8 +27,8 @@ public class Calculadora implements ICalculadora{
 	 * @return int value
 	 */
 	@Override
-	public int sumar(int arg1, int arg2) {
-		return (arg1+arg2);
+	public int sumar() {
+		return (input1 + input2);
 	}
 
 	/**
@@ -25,8 +38,8 @@ public class Calculadora implements ICalculadora{
 	 * @return int value
 	 */
 	@Override
-	public int restar(int arg1, int arg2) {
-		return (arg1-arg2);
+	public int restar() {
+		return (input1 - input2);
 	}
 
 	/**
@@ -36,8 +49,8 @@ public class Calculadora implements ICalculadora{
 	 * @return int value
 	 */
 	@Override
-	public int multiplicar(int arg1, int arg2) {
-		return (arg1*arg2);
+	public int multiplicar() {
+		return (input1 * input2);
 	}
 
 	/**
@@ -47,8 +60,8 @@ public class Calculadora implements ICalculadora{
 	 * @return int value
 	 */
 	@Override
-	public int division(int arg1, int arg2) {
-		return (arg1/arg2);
+	public int dividir() {
+		return (input1 / input2);
 	}
 }
                   

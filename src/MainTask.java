@@ -8,21 +8,19 @@ public class MainTask {
 
 	public static void main(String[] args) {
 		
-		int num1 = 16;
-		int num2 = 4;
 		
-		Calculadora operation = new Calculadora();
+		Calculadora operation = new Calculadora(16,4);
 		
-		int result = operation.sumar(num1, num2);
+		int result = operation.sumar();
 		System.out.println(result);
 		
-		result = operation.restar(num1, num2);
+		result = operation.restar();
 		System.out.println(result);
 		
-		result = operation.multiplicar(num1, num2);
+		result = operation.multiplicar();
 		System.out.println(result);
 		
-		result = operation.division(num1, num2);
+		result = operation.dividir();
 		System.out.println(result);
 	}
 }
